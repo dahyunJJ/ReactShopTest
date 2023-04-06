@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
+  color: #000;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mw {
+  max-width: 1200px;
+  width: calc(100% - 2rem);
+  margin: 3rem auto;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 200px;
+  min-width: 100px;
+}
+.logo img {
+  width: 100%;
+}
+.gnb {
+}
+.person {
+  background-color: #fbd6b9;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.gnb a {
+  display: inline-block;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #eaeaea;
+  border-radius: 0.5rem;
+}
+
+.sec1 {
+  border-radius: 0.5rem;
+  /* border: 1px solid red; */
+  background-image: url(/public/img/sec1_main.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 4rem 0.5rem;
+  color: white;
+}
+.sec1 .btnHead {
+  padding: 1rem;
+  background-color: #fbd6b9;
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.sec2 .mySwiper {
+  /* overflow: visible; */
+}
+.sec2 .list {
+  border: 1px solid #eaeaea;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.sec2 .productCon {
+  /* border: 1px solid red; */
+  overflow: hidden;
+  padding-top: 70%;
+  position: relative;
+}
+
+.sec2 .productCon img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.list .dec {
+  padding: 1rem;
+}
+.list .dec > * {
+  width: 100%;
+  padding: 1rem;
+}
+.list .dec button {
+}
+
+/* sec3 */
+.sec3 {
+  background-image: url(/public/img/sec3_bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 30vh;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+.sec3 p {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+/* sec4 */
+.sec4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec4 div {
+  /* border: 1px solid red; */
+  width: 200px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.sec4 div p:first-of-type {
+  box-shadow: 0 0 10px #00000030;
+  width: 60%;
+  padding-top: 60%;
+  border-radius: 50%;
+  position: relative;
+}
+.sec4 div p:last-of-type {
+  margin-top: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sec4 div img {
+  position: absolute;
+  width: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
